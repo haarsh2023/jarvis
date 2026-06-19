@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 
 const chatRoute = require('./routes/chat');
+const ttsRoute = require('./routes/tts');
 
 const app = express();
 
@@ -36,6 +37,9 @@ app.get('/', (req, res) => {
 
 // --- Main chat route (this is where the actual brain logic lives) ---
 app.use('/api/chat', chatRoute);
+
+// --- Text-to-speech using your cloned MiniMax voice ---
+app.use('/api/tts', ttsRoute);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

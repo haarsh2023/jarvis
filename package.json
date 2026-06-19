@@ -1,7 +1,7 @@
 {
   "name": "jarvis-backend",
   "version": "1.0.0",
-  "description": "Backend for JARVIS-style assistant website. Handles Groq (brain) and Tavily (research) calls so API keys stay server-side.",
+  "description": "Backend for JARVIS-style assistant website. Handles Groq (brain), Tavily (research), and MiniMax (cloned-voice TTS) calls so API keys stay server-side.",
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
